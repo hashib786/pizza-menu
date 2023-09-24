@@ -1,5 +1,14 @@
+const Header = () => {
+  return <h1>This is Hashib Header</h1>;
+};
+
 const Pizza = () => {
-  return <div>Pizza</div>;
+  return (
+    <>
+      <Header />
+      <h1>Hello</h1>
+    </>
+  );
 };
 
 export default Pizza;
