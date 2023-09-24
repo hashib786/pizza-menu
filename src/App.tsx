@@ -1,3 +1,5 @@
+import Pizza from "./Pizza";
+
 interface pizzaObject {
   name: string;
   ingredients: string;
@@ -52,7 +54,11 @@ const pizzaData: pizzaObject[] = [
 console.log(pizzaData);
 
 const App = () => {
-  return <div>App</div>;
+  return (
+    <>
+      <Pizza />
+    </>
+  );
 };
 
 export default App;
