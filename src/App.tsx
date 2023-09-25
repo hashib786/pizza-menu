@@ -1,7 +1,6 @@
-import Pizza from "./Pizza";
 import "./index.css";
 
-interface pizzaObject {
+export interface pizzaObject {
   name: string;
   ingredients: string;
   price: number;
@@ -66,7 +65,6 @@ const Menu = () => {
   return (
     <main className="menu">
       <h2>Our Menu</h2>
-      <Pizza />
     </main>
   );
 };
