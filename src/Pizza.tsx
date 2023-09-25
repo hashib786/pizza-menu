@@ -3,10 +3,16 @@ const Header = () => {
 };
 
 const Pizza = () => {
+  const styles: React.CSSProperties = {
+    backgroundColor: "red",
+    padding: "10px",
+    color: "white",
+  };
+
   return (
     <>
       <Header />
-      <h1>Hello</h1>
+      <h1 style={styles}>Hello</h1>
     </>
   );
 };
