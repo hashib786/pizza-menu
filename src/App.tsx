@@ -1,4 +1,5 @@
 import Pizza from "./Pizza";
+import "./index.css";
 
 interface pizzaObject {
   name: string;
@@ -53,11 +54,34 @@ const pizzaData: pizzaObject[] = [
 ];
 console.log(pizzaData);
 
+const Header = () => {
+  return (
+    <header className="header">
+      <h1>This is Hashib Header</h1>
+    </header>
+  );
+};
+
+const Menu = () => {
+  return (
+    <main className="menu">
+      <h2>Our Menu</h2>
+      <Pizza />
+    </main>
+  );
+};
+
+const Footer = () => {
+  return <footer className="footer">This is Hashib footer</footer>;
+};
+
 const App = () => {
   return (
-    <>
-      <Pizza />
-    </>
+    <div className="container">
+      <Header />
+      <Menu />
+      <Footer />
+    </div>
   );
 };
 
